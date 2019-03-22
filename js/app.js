@@ -24,3 +24,24 @@ const setOverlay = (value) =>{
 		body.classList.remove('noScroll');
 	}
 };
+
+// On application start, perform these
+const startApp = () => {
+	currentYear();
+	const iAwesome = document.querySelector('i.fa.fa-bars');
+	let giveOverlay = false;
+	btnToggle.addEventListener('click', function() {
+		if (btnToggle.style.backgroundColor == '' || btnToggle.style.backgroundColor == 'transparent') {
+			btnToggle.style.backgroundColor = "#FD6900";
+			iAwesome.style.color = '#fff';
+			giveOverlay = true;
+		} else{
+			btnToggle.style.backgroundColor = "transparent";
+			iAwesome.style.color = '#000';
+			giveOverlay = false;
+		}
+		setOverlay(giveOverlay);
+	});
+};
+
+startApp();
