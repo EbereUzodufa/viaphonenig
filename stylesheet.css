@@ -113,7 +113,7 @@ button.btn{
 
 footer p {
     text-align: center;
-    color: white;
+    color: #16642F;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.9em;
     font-weight: bold;
@@ -124,6 +124,7 @@ footer p {
 footer{
 	margin-top: 30px;
 	background-color: #fff;
+	border-top: 0.75px solid #16642F;
 }
 
 .overlay{
