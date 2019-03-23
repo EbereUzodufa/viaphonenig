@@ -8,12 +8,12 @@
 */
 
 
-body, header, .container, a.navLink, button#btnMobileToggle, nav, div.navigation, a#logoLink{
+body, header, main, article, .container, a.navLink, button#btnMobileToggle, nav, div.navigation, a#logoLink{
 	display: flex;
 	flex-wrap: wrap;
 }
 
-body, header, footer, .container, .navContainer, a.navLink, div.navigation{
+body, header, main, footer, .container, .navContainer, a.navLink, div.navigation, img.pageImage{
 	width: 100%;
 	max-width: 100%;
 }
