@@ -9,7 +9,7 @@
 */
 
 
-body, header, main, section, article, .container, a.navLink, button#btnMobileToggle, nav, div.navigation, a#logoLink, .core-value{
+body, header, main, section, article, .container, a.navLink, button#btnMobileToggle, nav, div.navigation, a#logoLink, div.core-value{
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -133,8 +133,8 @@ h2.cassavaApp-name, p.cassavaApp-motto {
 	margin: 5px auto;
 }
 
-.core-value{
-	margin: 5px auto;
+div.core-value{
+	margin: 15px auto;
 }
 
 .btn{
