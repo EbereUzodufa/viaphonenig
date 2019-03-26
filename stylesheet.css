@@ -85,7 +85,7 @@ h1, h2, h3{
 	text-align: center;
 }
 
-h2, h3{
+h2, h3, p.cassavaApp-motto{
 	text-transform: capitalize;
 }
 
