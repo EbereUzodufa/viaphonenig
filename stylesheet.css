@@ -124,6 +124,12 @@ article.cassavaApp-section{
 	background-color: #3EC28F;
 }
 
+img.cassavaApp-image {
+    width: 150px;
+    height: 150px;
+    margin: 5px auto;
+}
+
 footer p {
     text-align: center;
     color: #16642F;
