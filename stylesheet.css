@@ -4,6 +4,7 @@
 	#16642F;
 	#3EC28F;
 	#FD6900;
+	#ff0;
 	#f5f5f5;
 */
 
@@ -13,7 +14,7 @@ body, header, main, section, article, .container, a.navLink, button#btnMobileTog
 	flex-wrap: wrap;
 }
 
-body, header, main, footer, article, .container, .navContainer, a.navLink, div.navigation, img.pageImage{
+body, header, main, footer, article, .container, .navContainer, a.navLink, div.navigation, img.pageImage, p.cassavaApp-motto{
 	width: 100%;
 	max-width: 100%;
 }
@@ -137,6 +138,11 @@ img.cassavaApp-image {
     width: 150px;
     height: 150px;
     margin: 5px auto;
+}
+
+p.cassavaApp-motto{
+	color: #ff0;
+    text-align: center;
 }
 
 footer p {
