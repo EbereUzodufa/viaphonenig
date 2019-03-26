@@ -9,18 +9,18 @@
 */
 
 
-body, header, main, section, article, .container, a.navLink, button#btnMobileToggle, nav, div.navigation, a#logoLink, div.core-value, div.fields, form{
+body, header, main, section, article, .container, a.navLink, button#btnMobileToggle, nav, div.navigation, a#logoLink, div.core-value, div.fields, form, div.contact.field{
 	display: flex;
 	flex-wrap: wrap;
 }
 
-body, header, main, footer, article, .container, .navContainer, a.navLink, div.navigation, img.pageImage, p.cassavaApp-motto, a.cassavaApp-page-link.center-text, p.core-value-name, p.core-value-text, p.service-title, p.service-text, p.product-title, p.product-text, a.product-link, div.fields, form, label, div.fields input, div.fields textarea{
+body, header, main, footer, article, .container, .navContainer, a.navLink, div.navigation, img.pageImage, p.cassavaApp-motto, a.cassavaApp-page-link.center-text, p.core-value-name, p.core-value-text, p.service-title, p.service-text, p.product-title, p.product-text, a.product-link, div.fields, form, label, div.fields input, div.fields textarea, div.contact.field, #googleMapAddress{
 	width: 100%;
 	max-width: 100%;
 }
 
 
-body, p.core-value-name, p.core-value-text, p.service-text, p.product-text{
+body, p, p.core-value-name, p.core-value-text, p.service-text, p.product-text{
     margin: 0px;
 }
 
@@ -96,6 +96,12 @@ i.core-value{
 
 i.fas::before, i.far::before {
     margin: 8%;
+}
+
+i.contact-detail {
+    color: #16642F;
+    margin: auto 5px;
+    font-size: 1em;
 }
 
 h1, h2, h3, p.core-value-name, p.service-title,p.product-title{
@@ -230,12 +236,16 @@ footer{
 	right: 0;
 	background: rgba(255, 255, 255, 0.75);
 	transition: 0.4s;
+	overflow-y: auto;
 }
 
 nav{
     width: 250px;
     background: #3EC28F;
-    padding: 30px 10px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 30px;
     right: 0;
     position: relative;
 }
@@ -277,6 +287,10 @@ div.product, div.service {
     box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
 }
 
+div.contact.field {
+    margin: 5px;
+}
+
 img.service-image, img.product-image {
     width: 150px;
     height: 150px;
@@ -287,12 +301,28 @@ img.service-image, img.product-image {
 	overflow: hidden;
 }
 
+@media screen and (max-height: 450px) {
+	nav{
+		height: 100%;
+	}
+}
+
 @media screen and (min-width: 1024px) {
+	nav{
+		height: auto;
+	}
+
 	nav ul, .overlay{
 		display: flex;
 		flex-wrap: wrap;
 	}
 	
+	section{
+		width: 900px;
+		max-width: 90%;
+		margin: auto;
+	}
+
 	.overlay{
 		position: inherit;
 	}
@@ -337,9 +367,4 @@ img.service-image, img.product-image {
 		width: 1024px;
 		margin: auto;
 	}
-
-/*	header{
-		box-shadow: 0px 2px 2px rgba(0,0,0,0.25);
-		z-index: 1;
-	}*/
 }
