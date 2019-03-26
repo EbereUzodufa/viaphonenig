@@ -108,6 +108,10 @@ h2.cassavaApp-name {
     color: #fff;
 }
 
+h2.cassavaApp-name {
+	margin: 5px auto;
+}
+
 .btn{
 	width: 250px;
     color: #fff;
