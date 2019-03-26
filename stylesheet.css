@@ -14,7 +14,7 @@ body, header, main, section, article, .container, a.navLink, button#btnMobileTog
 	flex-wrap: wrap;
 }
 
-body, header, main, footer, article, .container, .navContainer, a.navLink, div.navigation, img.pageImage, p.cassavaApp-motto, a.cassavaApp-page-link.center-text{
+body, header, main, footer, article, .container, .navContainer, a.navLink, div.navigation, img.pageImage, p.cassavaApp-motto, a.cassavaApp-page-link.center-text, p.core-value-name, p.core-value-text {
 	width: 100%;
 	max-width: 100%;
 }
@@ -89,7 +89,7 @@ i.core-value, i.fas::before, i.far::before {
     margin: auto;
 }
 
-h1, h2, h3{
+h1, h2, h3, p.core-value-name{
 	font-family: 'Roboto', sans-serif;
 	font-weight: bold;
 	color: #FD6900;
@@ -113,7 +113,7 @@ h2{
 	font-size: 1.2em
 }
 
-h3, i.core-value{
+h3, i.core-value, p.core-value-name{
 	font-size: 1.1em
 }
 
@@ -164,6 +164,15 @@ img.cassavaApp-image {
 p.cassavaApp-motto{
 	color: #ff0;
     text-align: center;
+}
+
+p.core-value-name, p.core-value-text {
+    text-align: center;
+    margin: 0px;
+}
+
+p.core-value-name {
+    color: #16642F;
 }
 
 footer p {
