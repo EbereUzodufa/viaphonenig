@@ -13,7 +13,7 @@ body, header, main, section, article, .container, a.navLink, button#btnMobileTog
 	flex-wrap: wrap;
 }
 
-body, header, main, footer, section, .container, .navContainer, a.navLink, div.navigation, img.pageImage{
+body, header, main, footer, article, .container, .navContainer, a.navLink, div.navigation, img.pageImage{
 	width: 100%;
 	max-width: 100%;
 }
