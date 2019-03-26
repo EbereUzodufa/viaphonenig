@@ -37,7 +37,7 @@ const startApp = () => {
 			giveOverlay = true;
 		} else{
 			btnToggle.style.backgroundColor = "transparent";
-			iAwesome.style.color = '#000';
+			iAwesome.style.color = '##FD6900';
 			giveOverlay = false;
 		}
 		setOverlay(giveOverlay);
