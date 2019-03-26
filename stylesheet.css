@@ -9,7 +9,7 @@
 */
 
 
-body, header, main, section, article, .container, a.navLink, button#btnMobileToggle, nav, div.navigation, a#logoLink{
+body, header, main, section, article, .container, a.navLink, button#btnMobileToggle, nav, div.navigation, a#logoLink, .core-value{
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -119,6 +119,10 @@ h2.cassavaApp-name, p.cassavaApp-motto {
 
 .center-text {
     text-align: center;
+}
+
+.core-value{
+	margin: 5px auto;
 }
 
 .btn{
