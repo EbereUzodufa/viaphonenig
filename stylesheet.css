@@ -103,6 +103,11 @@ h3{
 	font-size: 1.1em
 }
 
+h2.cassavaApp-name {
+    text-transform: uppercase;
+    color: #fff;
+}
+
 .btn{
 	width: 250px;
     color: #fff;
