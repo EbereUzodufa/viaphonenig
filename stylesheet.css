@@ -80,6 +80,15 @@ i.fas {
 	width: 1.5em;
 }
 
+i.core-value {
+    padding: 0;
+    color: #3EC28F;
+}
+
+i.core-value, i.fas::before, i.far::before {
+    margin: auto;
+}
+
 h1, h2, h3{
 	font-family: 'Roboto', sans-serif;
 	font-weight: bold;
@@ -104,7 +113,7 @@ h2{
 	font-size: 1.2em
 }
 
-h3{
+h3, i.core-value{
 	font-size: 1.1em
 }
 
