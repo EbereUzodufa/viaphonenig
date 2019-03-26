@@ -108,7 +108,7 @@ h2.cassavaApp-name {
     color: #fff;
 }
 
-h2.cassavaApp-name {
+h2.cassavaApp-name, p.cassavaApp-motto {
 	margin: 5px auto;
 }
 
