@@ -120,6 +120,10 @@ button.btn{
 	border: 0;
 }
 
+article.cassavaApp-section{
+	background-color: #3EC28F;
+}
+
 footer p {
     text-align: center;
     color: #16642F;
