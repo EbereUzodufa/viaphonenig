@@ -14,13 +14,17 @@ body, header, main, section, article, .container, a.navLink, button#btnMobileTog
 	flex-wrap: wrap;
 }
 
-body, header, main, footer, article, .container, .navContainer, a.navLink, div.navigation, img.pageImage, p.cassavaApp-motto, a.cassavaApp-page-link.center-text, p.core-value-name, p.core-value-text {
+body, header, main, footer, article, .container, .navContainer, a.navLink, div.navigation, img.pageImage, p.cassavaApp-motto, a.cassavaApp-page-link.center-text, p.core-value-name, p.core-value-text, p.service-title, p.service-text, p.product-title, p.product-text, a.product-link{
 	width: 100%;
 	max-width: 100%;
 }
 
+
+body, p.core-value-name, p.core-value-text, p.service-text, p.product-text{
+    margin: 0px;
+}
+
 body{
-	margin: 0px;
 	font-size: 1rem;
 	font-family: 'Lato', sans-serif;
 	color: #000;
@@ -90,7 +94,7 @@ i.core-value, i.fas::before, i.far::before {
     margin: auto;
 }
 
-h1, h2, h3, p.core-value-name{
+h1, h2, h3, p.core-value-name, p.service-title,p.product-title{
 	font-family: 'Roboto', sans-serif;
 	font-weight: bold;
 }
@@ -102,7 +106,7 @@ h1, h2, h3{
     width: 100%;
 }
 
-h1, h2, h3, p.core-value-name, p.core-value-text, .center-text, .btn, p.cassavaApp-motto, footer p {
+h1, h2, h3, p.core-value-name, p.core-value-text, .center-text, .btn, p.cassavaApp-motto, footer p, p.service-title, p.service-text, p.product-title, p.product-text, a.product-link{
     text-align: center;
 }
 
@@ -120,7 +124,7 @@ h2{
 	font-size: 1.2em
 }
 
-h3, p.core-value-name{
+h3, p.core-value-name, p.service-title,p.product-title{
 	font-size: 1.1em
 }
 
@@ -167,11 +171,7 @@ p.cassavaApp-motto{
 	color: #ff0;
 }
 
-p.core-value-name, p.core-value-text {
-    margin: 0px;
-}
-
-p.core-value-name {
+p.core-value-name, p.service-title,p.product-title {
     color: #16642F;
 }
 
@@ -220,12 +220,37 @@ a.navLink{
   	padding: 10px;
 }
 
+p.service-title,p.product-title {
+	margin: 10px auto;
+}
+
+a.product-link{
+	color: #16642F;
+}
+
 p.navItem {
     margin: auto 5px;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.25em;
     text-transform: uppercase;
+}
+
+div.product, div.service {
+    width: 250px;
+    /* height: 250px; */
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+}
+
+img.service-image, img.product-image {
+    width: 150px;
+    height: 150px;
+    margin: 10px auto;
 }
 
 .noScroll{
