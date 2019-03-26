@@ -272,7 +272,7 @@ p.navItem {
     text-transform: uppercase;
 }
 
-div.product, div.service {
+div.product, div.service, div.core-value{
     width: 250px;
 }
 
@@ -280,7 +280,7 @@ div.core-value{
 	margin: 15px auto;
 }
 
-div.product, div.service,div.core-value {
+div.product, div.service{
     margin: 10px auto;
     padding: 10px;
     border-radius: 2px;
