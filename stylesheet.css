@@ -90,8 +90,12 @@ i.core-value {
     color: #3EC28F;
 }
 
-i.core-value, i.fas::before, i.far::before {
+i.core-value{
     margin: auto;
+}
+
+i.fas::before, i.far::before {
+    margin: 5px auto;
 }
 
 h1, h2, h3, p.core-value-name, p.service-title,p.product-title{
