@@ -14,7 +14,7 @@ body, header, main, section, article, .container, a.navLink, button#btnMobileTog
 	flex-wrap: wrap;
 }
 
-body, header, main, footer, article, .container, .navContainer, a.navLink, div.navigation, img.pageImage, p.cassavaApp-motto, a.cassavaApp-page-link.center-text, p.core-value-name, p.core-value-text, p.service-title, p.service-text, p.product-title, p.product-text, a.product-link, div.fields, form, label, div.fields input, div.fields textarea, div.contact.field, #googleMapAddress{
+body, header, main, footer, article, .container, .navContainer, a.navLink, div.navigation, img.pageImage, p.cassavaApp-motto, a.cassavaApp-page-link.center-text, p.core-value-name, p.core-value-text, p.service-title, p.service-text, p.product-title, p.product-text, a.product-link, div.fields, form, label, div.fields input, div.fields textarea, div.contact.field, #googleMapAddress, p.article.text{
 	width: 100%;
 	max-width: 100%;
 }
