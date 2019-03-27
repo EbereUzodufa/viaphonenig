@@ -337,6 +337,13 @@ i.social-media-icon {
     margin-top: 5px;
 }
 
+button.cassavaApp-accordion {
+    padding: 10px 5px;
+    border: 0px;
+    background: #16642F;
+    color: #fff;
+}
+
 @media screen and (max-height: 450px) {
 	nav{
 		height: 100%;
