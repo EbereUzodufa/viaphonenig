@@ -319,6 +319,16 @@ a.social-link {
     margin: 5px auto;
 }
 
+i.social-media-icon:hover {
+    transition: 0.3s;
+    color: #FD6900;
+}
+
+i.social-media-icon {
+    font-size: 3em;
+    color: #3EC28F;
+}
+
 @media screen and (max-height: 450px) {
 	nav{
 		height: 100%;
