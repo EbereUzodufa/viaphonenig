@@ -9,12 +9,12 @@
 */
 
 
-body, header, main, section, article, .container, a.navLink, button#btnMobileToggle, nav, div.navigation, a#logoLink, div.core-value, div.fields, form, div.contact.field, div.product, div.service, a.social-link, .social-media{
+body, header, main, section, article, .container, a.navLink, button#btnMobileToggle, nav, div.navigation, a#logoLink, div.core-value, div.fields, form, div.contact.field, div.product, div.service, a.social-link, .social-media, .cassavaApp-accordions, .cassavaApp-accordion {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-body, header, main, footer, article, .container, .navContainer, a.navLink, div.navigation, img.pageImage, p.cassavaApp-motto, a.cassavaApp-page-link.center-text, p.core-value-name, p.core-value-text, p.service-title, p.service-text, p.product-title, p.product-text, a.product-link, div.fields, form, label, div.fields input, div.fields textarea, div.contact.field, #googleMapAddress, p.article.text{
+body, header, main, footer, article, .container, .navContainer, a.navLink, div.navigation, img.pageImage, p.cassavaApp-motto, a.cassavaApp-page-link.center-text, p.core-value-name, p.core-value-text, p.service-title, p.service-text, p.product-title, p.product-text, a.product-link, div.fields, form, label, div.fields input, div.fields textarea, div.contact.field, #googleMapAddress, p.article.text, .cassavaApp-accordions, .cassavaApp-accordion {
 	width: 100%;
 	max-width: 100%;
 }
@@ -330,10 +330,11 @@ i.social-media-icon {
 }
 
 .cassavaApp-accordions {
-    width: 100%;
     margin: 10px auto;
-    display: flex;
-    flex-wrap: wrap;
+}
+
+.cassavaApp-accordion {
+    margin-top: 5px;
 }
 
 @media screen and (max-height: 450px) {
