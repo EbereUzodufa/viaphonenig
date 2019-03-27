@@ -329,6 +329,13 @@ i.social-media-icon {
     color: #3EC28F;
 }
 
+.cassavaApp-accordions {
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 @media screen and (max-height: 450px) {
 	nav{
 		height: 100%;
@@ -338,6 +345,10 @@ i.social-media-icon {
 @media screen and (min-width: 1024px) {
 	nav{
 		height: auto;
+	}
+
+	body{
+		overflow-y: scroll;
 	}
 
 	nav ul, .overlay{
@@ -399,5 +410,9 @@ i.social-media-icon {
 	article#contact-form, article#contact-details, .container.col-2{
 	    width: 45%;
 	    margin: 5px auto;
+	}
+
+	.cassavaApp-accordions {
+	    width: 700px;
 	}
 }
