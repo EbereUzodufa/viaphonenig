@@ -9,7 +9,7 @@
 */
 
 
-body, header, main, section, article, .container, a.navLink, button#btnMobileToggle, nav, div.navigation, a#logoLink, div.core-value, div.fields, form, div.contact.field, div.product, div.service{
+body, header, main, section, article, .container, a.navLink, button#btnMobileToggle, nav, div.navigation, a#logoLink, div.core-value, div.fields, form, div.contact.field, div.product, div.service, a.social-link, .social-media{
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -304,6 +304,19 @@ img.service-image, img.product-image {
 
 iframe.cassavaApp-videos {
     margin: 10px auto;
+}
+
+.container.social-media {
+    width: 300px;
+    margin: auto;
+}
+
+.social-media {
+    margin: auto;
+}
+
+a.social-link {
+    margin: 5px auto;
 }
 
 @media screen and (max-height: 450px) {
