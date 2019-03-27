@@ -351,6 +351,7 @@ button.cassavaApp-accordion:hover{
 .panel {
     padding: 10px;
     background: #f5f5f5;
+    display: none;
 }
 
 @media screen and (max-height: 450px) {
