@@ -14,7 +14,7 @@ body, header, main, section, article, .container, a.navLink, button#btnMobileTog
 	flex-wrap: wrap;
 }
 
-body, header, main, footer, article, .container, .navContainer, a.navLink, div.navigation, img.pageImage, p.cassavaApp-motto, a.cassavaApp-page-link.center-text, p.core-value-name, p.core-value-text, p.service-title, p.service-text, p.product-title, p.product-text, a.product-link, div.fields, form, label, div.fields input, div.fields textarea, div.contact.field, #googleMapAddress, p.article.text, .cassavaApp-accordions, .cassavaApp-accordion {
+body, header, main, footer, article, .container, .navContainer, a.navLink, div.navigation, img.pageImage, p.cassavaApp-motto, a.cassavaApp-page-link.center-text, p.core-value-name, p.core-value-text, p.service-title, p.service-text, p.product-title, p.product-text, a.product-link, div.fields, form, label, div.fields input, div.fields textarea, div.contact.field, #googleMapAddress, p.article.text, .cassavaApp-accordions, .cassavaApp-accordion, .panel {
 	width: 100%;
 	max-width: 100%;
 }
@@ -342,6 +342,11 @@ button.cassavaApp-accordion {
     border: 0px;
     background: #16642F;
     color: #fff;
+}
+
+.panel {
+    padding: 10px;
+    background: #f5f5f5;
 }
 
 @media screen and (max-height: 450px) {
