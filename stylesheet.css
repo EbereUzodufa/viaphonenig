@@ -302,6 +302,10 @@ img.service-image, img.product-image {
 	overflow: hidden;
 }
 
+iframe.cassavaApp-videos {
+    margin: 10px auto;
+}
+
 @media screen and (max-height: 450px) {
 	nav{
 		height: 100%;
@@ -372,9 +376,5 @@ img.service-image, img.product-image {
 	article#contact-form, article#contact-details, .container.col-2{
 	    width: 45%;
 	    margin: 5px auto;
-	}
-
-	iframe.cassavaApp-videos {
-	    margin: 10px auto;
 	}
 }
