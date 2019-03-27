@@ -344,6 +344,10 @@ button.cassavaApp-accordion {
     color: #fff;
 }
 
+button.cassavaApp-accordion:hover{
+	background: #FD6900;
+}
+
 .panel {
     padding: 10px;
     background: #f5f5f5;
