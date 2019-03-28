@@ -1,7 +1,7 @@
 // Global Declaration
 const btnToggle = document.getElementById('btnMobileToggle');
 const body = document.body;
-
+let accordion = document.getElementsByClassName('cassavaApp-accordion');
 
 // Get current year
 const currentYear = () => {
@@ -25,9 +25,32 @@ const setOverlay = (value) =>{
 	}
 };
 
+const accordionHelper = () =>{
+	// Accordion
+
+	let aIndex;
+
+	for (aIndex = 0; aIndex < accordion.length; aIndex++) {
+	  accordion[aIndex].addEventListener("click", function() {
+
+	    /* Toggle between hiding and showing the active panel then change button background by toggling 'selected' */
+	    var panel = this.nextElementSibling;
+	    if (panel.style.display === "block") {
+	     	panel.style.display = "none";
+	    	this.classList.remove('selected');
+	    } else {
+	    	panel.style.display = "block";
+	    	this.classList.add('selected');
+	    }
+	  });
+	}
+}
+
 // On application start, perform these
 const startApp = () => {
 	currentYear();
+	accordionHelper();
+	// Toggle Button
 	const iAwesome = document.querySelector('i.fa.fa-bars');
 	let giveOverlay = false;
 	btnToggle.addEventListener('click', function() {
