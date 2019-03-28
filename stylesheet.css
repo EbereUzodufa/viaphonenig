@@ -33,7 +33,7 @@ body{
 }
 
 header{
-	padding: 10px;
+	padding: it10px;
 	z-index: 1;
 }
 
@@ -263,6 +263,7 @@ p.service-title,p.product-title {
 
 a.product-link{
 	color: #16642F;
+	display: none;
 }
 
 p.navItem {
