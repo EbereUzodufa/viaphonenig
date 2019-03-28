@@ -13,7 +13,7 @@ const currentYear = () => {
 // Set overlay
 const setOverlay = (value) =>{
 	let setValue = value;
-	console.log(setValue);
+	// console.log(setValue);
 	const overlay = document.querySelector('div.overlay');
 	if (setValue == true){
 		overlay.style.width = '100%';
@@ -26,7 +26,7 @@ const setOverlay = (value) =>{
 };
 
 //Toggle Menu Button
-const toogleMneuBtn = () =>{
+const toogleMenuBtn = () =>{
 	// Toggle Button
 	const iAwesome = document.querySelector('i.fa.fa-bars');
 	let giveOverlay = false;
@@ -67,9 +67,9 @@ const accordionHelper = () =>{
 
 // On application start, perform these
 const startApp = () => {
-	currentYear();
-	toogleMneuBtn();
-	accordionHelper();
+	currentYear(); //Get Current Year
+	toogleMenuBtn(); //Enable Toggle Menu
+	accordionHelper(); //Enable Accordion Show and Hide functionality
 };
 
 startApp();
