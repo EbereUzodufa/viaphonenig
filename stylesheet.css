@@ -51,8 +51,8 @@ section{
 	width: 25px;
 	height: 25px;
 }
-s
-a.navLink, .btn, a#logoLink, footer p a,footer ul#footer-products li a{
+
+a.navLink, .btn, a#logoLink, footer p a,footer ul#footer-products li a {
   	text-decoration: none;
 }
 
