@@ -222,6 +222,10 @@ footer{
 	border-top: 0.75px solid #16642F;
 }
 
+footer div.footerArea{
+	width: 100%;
+}
+
 .overlay{
 	max-height: 100vh;
 	height: 100%;
@@ -436,5 +440,11 @@ button.cassavaApp-accordion:hover{
 
 	.cassavaApp-accordions {
 	    width: 700px;
+	}
+
+	footer div.footerArea{
+		width: calc((100% - 20px)/3);
+		margin-right: 0px;
+		margin-left: 0px;
 	}
 }
