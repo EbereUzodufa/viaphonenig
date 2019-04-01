@@ -224,6 +224,8 @@ footer{
 
 footer div.footerArea{
 	width: 100%;
+	margin: 15px auto;
+	padding: 10px;
 }
 
 .overlay{
@@ -446,8 +448,6 @@ button.cassavaApp-accordion:hover{
 	}
 
 	footer div.footerArea{
-		width: calc((100% - 20px)/3);
-		margin-right: 0px;
-		margin-left: 0px;
+		width: 30%;
 	}
 }
