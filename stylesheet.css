@@ -208,7 +208,7 @@ p.core-value-name, p.service-title,p.product-title {
     color: #16642F;
 }
 
-footer p{
+footer p, footer p a, footer ul#footer-products li, footer ul#footer-products li a{
     font-family: 'Lato', sans-serif;
     text-transform: capitalize;
     color: #000;
