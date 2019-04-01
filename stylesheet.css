@@ -208,11 +208,12 @@ p.core-value-name, p.service-title,p.product-title {
     color: #16642F;
 }
 
-footer p {
+footer p{
     font-family: 'Lato', sans-serif;
     font-size: 0.9em;
     text-transform: capitalize;
     margin: 10px;
+    color: #000;
 }
 
 footer{
