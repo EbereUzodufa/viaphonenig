@@ -250,9 +250,13 @@ nav{
     position: relative;
 }
 
-nav ul {
+nav ul, footer ul#footer-products{
     list-style: none;
     padding: 0;
+}
+
+footer ul#footer-products{
+	margin: 0px;
 }
 
 a.navLink{
