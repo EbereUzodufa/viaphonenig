@@ -218,8 +218,8 @@ footer p, footer p a, footer ul#footer-products li, footer ul#footer-products li
 
 footer{
 	margin-top: 30px;
-	background-color: #fff;
-	border-top: 0.75px solid #16642F;
+	background-color: #3EC28F;
+	border-top: 0.75px solid #000;
 }
 
 footer div.footerArea{
