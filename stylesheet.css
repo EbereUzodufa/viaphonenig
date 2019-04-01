@@ -51,6 +51,10 @@ section{
 	width: 25px;
 	height: 25px;
 }
+s
+a.navLink, .btn, a#logoLink{
+  	text-decoration: none;
+}
 
 a#logoLink {
     width: 100%;
@@ -172,10 +176,6 @@ input, textarea#your-message{
 	padding: 5px;
     border: 0.3px solid black;
     box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
-}
-
-a.navLink, .btn, a#logoLink{
-  	text-decoration: none;
 }
 
 form{
