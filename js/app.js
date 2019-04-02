@@ -2,9 +2,38 @@
 const btnToggle = document.getElementById('btnMobileToggle');
 const body = document.body;
 let accordion = document.getElementsByClassName('cassavaApp-accordion');
-
 class DbHelper{
-	
+	static fetchJSONFromFile = (file) =>{
+		let arrValue = [];
+
+		function status(response) {
+		  if (response.status >= 200 && response.status < 300) {
+		    return Promise.resolve(response)
+		  } else {
+		    return Promise.reject(new Error(response.statusText))
+		  }
+		}
+
+		function json(response) {
+		  return response.json()
+		}
+
+		fetch(file)
+		  .then(status)
+		  .then(json)
+		  .then(function(data) {
+		  	const [values] = Object.values(data);
+		  	values.map(value => {
+		  		// jsonObj.push(data);
+		  		arrValue.push(value);
+		  	})
+		    console.log('Request succeeded with JSON response', data);
+		  }).catch(function(error) {
+		    console.log('Request failed', error);
+		  });
+
+	  	return arrValue;
+	}
 }
 
 // Get current year
