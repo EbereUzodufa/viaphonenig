@@ -3,6 +3,10 @@ const btnToggle = document.getElementById('btnMobileToggle');
 const body = document.body;
 let accordion = document.getElementsByClassName('cassavaApp-accordion');
 
+class DbHelper{
+	
+}
+
 // Get current year
 const currentYear = () => {
 	let d = new Date();
