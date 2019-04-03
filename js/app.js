@@ -37,6 +37,13 @@ const fetchJSONFromFile = (file, arrayEle) =>{
   	return arrValue;
 }
 
+//Get Services by sending json URL
+fetchServices = () =>{
+	services = [];
+	fetchJSONFromFile('./data/services.json', services);
+	console.log('services',services);
+}
+
 // Get current year
 const currentYear = () => {
 	let d = new Date();
