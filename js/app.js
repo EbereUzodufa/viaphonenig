@@ -2,6 +2,8 @@
 const btnToggle = document.getElementById('btnMobileToggle');
 const body = document.body;
 let accordion = document.getElementsByClassName('cassavaApp-accordion');
+let services = [];
+let products = [];
 
 const fetchJSONFromFile = (file, arrayEle) =>{
 	let arrValue = [];
