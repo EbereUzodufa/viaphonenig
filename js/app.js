@@ -44,6 +44,46 @@ fetchServices = () =>{
 	console.log('services',services);
 }
 
+//Get individual service(s)
+fetchGetServicesHTML = () =>{
+	// console.log('service', services);
+	const article = document.querySelector('article.viaphone-services');
+	services.forEach(service=>{
+		// console.log('A serv', service);
+		// console.log('Returned Div',createServiceHTML(service));
+		article.append(createServiceHTML(service));
+	})
+}
+
+createServiceHTML = (service) =>{
+	//Create Elements
+
+	const {id, name, image, writeUp} = service;
+	// console.log('service items', `This is the id = ${id}, name = ${name}, image = ${image}, write-up = ${writeUp}`);
+
+	const div = document.createElement('div');
+	div.classList.add('service');
+
+	const img = document.createElement('img');
+	img.classList.add('service-image');
+	img.src = `images/services/${image}`;
+	img.alt = `Image of our service, ${image}`;
+	div.append(img);
+
+
+	const pTitle = document.createElement('p');
+	pTitle.classList.add('service-title');
+	pTitle.innerHTML = name;
+	div.append(pTitle);
+
+	const pText = document.createElement('p');
+	pText.classList.add('service-text');
+	pText.innerHTML = writeUp;
+	div.append(pText);
+
+	return div;
+}
+
 // Get current year
 const currentYear = () => {
 	let d = new Date();
