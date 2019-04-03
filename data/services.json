@@ -3,43 +3,43 @@
 		{
 			"id": "1",
 			"name": "Application Services",
-			"images": "Application-Services.jpg",
-			"write-up": "Development, modernization, management and testing for next-gen apps."
+			"image": "Application-Services.jpg",
+			"writeUp": "Development, modernization, management and testing for next-gen apps."
 		}, {
 			"id": "2",
 			"name": "Big Data & Analytics",
-			"images": "Big-Data-&-Analytics.jpg",
-			"write-up": "Consulting, implementation and as-a-service data solutions."
+			"image": "Big-Data-&-Analytics.jpg",
+			"writeUp": "Consulting, implementation and as-a-service data solutions."
 		}, {
 			"id": "3",
 			"name": "Consulting",
-			"images": "Consulting.jpg",
-			"write-up": "Technology consulting for maximum ROI."
+			"image": "Consulting.jpg",
+			"writeUp": "Technology consulting for maximum ROI."
 		}, {
 			"id": "4",
 			"name": "Cloud Solutions & Services",
-			"images": "Cloud-Solutions-&-Services.png",
-			"write-up": "ViaPhone Service will help you become a cloud-empowered enterprise."
+			"image": "Cloud-Solutions-&-Services.png",
+			"writeUp": "ViaPhone Service will help you become a cloud-empowered enterprise."
 		}, {
 			"id": "5",
 			"name": "Industry Software & Solutions",
-			"images": "Industry-Software-&-Solutions.jpg",
-			"write-up": "Software and BPO to power your enterprise."
+			"image": "Industry-Software-&-Solutions.jpg",
+			"writeUp": "Software and BPO to power your enterprise."
 		}, {
 			"id": "6",
 			"name": "Infrastructure Services",
-			"images": "Infrastructure-Services.png",
-			"write-up": "Next-generation IT solutions."
+			"image": "Infrastructure-Services.png",
+			"writeUp": "Next-generation IT solutions."
 		}, {
 			"id": "7",
 			"name": "Mobility Solutions",
-			"images": "Mobility-Solutions.jpg",
-			"write-up": "Realize the transformative power of mobility."
+			"image": "Mobility-Solutions.jpg",
+			"writeUp": "Realize the transformative power of mobility."
 		}, {
 			"id": "8",
 			"name": "Cybersecurity",
-			"images": "Cybersecurity.png",
-			"write-up": "Embed security into the heart of your business processes and secure company data wherever it may reside."
+			"image": "Cybersecurity.png",
+			"writeUp": "Embed security into the heart of your business processes and secure company data wherever it may reside."
 		}
 	]
 }
