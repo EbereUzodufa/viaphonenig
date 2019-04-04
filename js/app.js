@@ -99,6 +99,64 @@ fetchProducts = () =>{
 	console.log('product', products);
 }
 
+//Get individual product(s)
+fetchGetProductsHTML = () =>{
+	// console.log('product', products);
+	const article = document.querySelector('article.viaphone-products');
+	products.forEach(product=>{
+		// console.log('A prod', product);
+		// console.log(`Product ${id}`, `This is the id = ${id}, name = ${name}, image = ${image}, features = ${features}, write-up = ${writeUp}, writeUp-list = ${writeUpList}, featured = ${featured}`);
+		// createProductCardHTML(product);
+		// console.log('Returned Div',createProductCardHTML(product));
+		article.append(createProductCardHTML(product));
+	})
+}
+
+createProductCardHTML = (product) =>{
+	//Create Elements
+
+	const {id, name, features, image, writeUp, writeUpList, featured} = product;
+	// console.log('product items', `This is the id = ${id}, name = ${name}, image = ${image}, write-up = ${writeUp}`);
+
+	const div = document.createElement('div');
+	div.classList.add('product');
+
+	const img = document.createElement('img');
+	img.classList.add('product-image');
+	img.src = `images/products/${image}`;
+	img.alt = `Image of our product, ${name}`;
+	div.append(img);
+
+
+	const pTitle = document.createElement('p');
+	pTitle.classList.add('product-title');
+	pTitle.innerHTML = name;
+	div.append(pTitle);
+
+	const pText = document.createElement('p');
+	pText.classList.add('product-text');
+	const excerptText = writeUp[0];
+	pText.innerHTML = GetExcerpt(excerptText);
+	div.append(pText);
+
+	const a = document.createElement('a');
+	a.classList.add('product-link');
+	a.innerHTML = `Click here to know more about ${name}`;
+	a.href = "";
+	a.role = 'button';
+	div.append(a);
+
+	return div;
+}
+
+GetExcerpt = (writeUp) =>{
+	const syntax = "."
+	const syntaxPos = writeUp.indexOf(syntax);
+	const excerpt = writeUp.slice(0, (syntaxPos + 1));
+	// console.log(excerpt);
+	return excerpt;
+}
+
 // Get current year
 const currentYear = () => {
 	let d = new Date();
