@@ -92,6 +92,13 @@ GetServices = () =>{
 	});
 }
 
+//Get Products by sending json URL
+fetchProducts = () =>{
+	products = [];
+	fetchJSONFromFile('./data/products.json', products);
+	console.log('product', products);
+}
+
 // Get current year
 const currentYear = () => {
 	let d = new Date();
