@@ -157,6 +157,14 @@ GetExcerpt = (writeUp) =>{
 	return excerpt;
 }
 
+//Create Our Products and load them in
+GetProducts = () =>{
+	fetchProducts();
+	window.addEventListener('load', function() {
+		fetchGetProductsHTML();
+	});
+}
+
 // Get current year
 const currentYear = () => {
 	let d = new Date();
