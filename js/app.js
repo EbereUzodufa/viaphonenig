@@ -4,6 +4,8 @@ const body = document.body;
 let accordion = document.getElementsByClassName('cassavaApp-accordion');
 let services = [];
 let products = [];
+const footerUl = document.getElementById('footer-products');
+
 
 const fetchJSONFromFile = (file, arrayEle) =>{
 	let arrValue = [];
@@ -165,6 +167,51 @@ GetProducts = () =>{
 	});
 }
 
+//Created for footer-products
+createFooterProducts = () =>{
+	products.forEach(product=>{
+		footerUl.append(createFooterProductHTML(product));
+	});
+
+	footerUl.append(createFooterProductCassavaAppHTML());
+}
+
+//Created for footer-products HTML
+createFooterProductHTML = (product) =>{
+	const li = document.createElement('li');
+	li.classList.add('footer-product');
+
+	const a = document.createElement('a');
+	a.classList.add('footer-product-link');
+	a.href = "";
+	a.innerHTML = product.name;
+
+	li.append(a);
+	return li;
+}
+
+//Create CassavaApp footer product HTML
+createFooterProductCassavaAppHTML = () =>{
+	const li = document.createElement('li');
+	li.classList.add('footer-product');
+
+	const a = document.createElement('a');
+	a.classList.add('footer-product-link');
+	a.href = "cassavaapp.html";
+	a.innerHTML = 'CassavaApp';
+
+	li.append(a);
+	return li;
+}
+
+//Get and Attach product names to footer
+GetFooterProducts = () =>{
+	fetchProducts();
+	window.addEventListener('load', function() {
+		createFooterProducts();
+	});
+}
+
 // Get current year
 const currentYear = () => {
 	let d = new Date();
@@ -232,6 +279,7 @@ const startApp = () => {
 	currentYear(); //Get Current Year
 	toogleMenuBtn(); //Enable Toggle Menu
 	accordionHelper(); //Enable Accordion Show and Hide functionality
+	GetFooterProducts(); //Get Footer product names
 };
 
 startApp();
