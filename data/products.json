@@ -1,0 +1,198 @@
+{
+	"products":[
+		{
+			"id": 1,
+			"name": "Algebra Payment Platform",
+			"features": [
+				"Distribute workload across multiple services and computers.",
+				"Provide high availability and continuous access to enterprise data.",
+				"Allow the services to scale easily. This allows hardware components to be easily added or removed depending on the demand on the system, without the need to bring the service down.",
+				"Monitoring of connection availability - for early detection of a disconnection. Buffered messaging and automatic reconnect - for overcoming short interruptions in case of unstable network.",
+				"Acknowledged messages - for getting confirmation whether a message was delivered or not.",
+				"Authenticated Connection - for verifying the identity of clients connecting to the service.",
+				"Encrypted Messages - AES or RSA encrypted messages.",
+				"Digitally Signed Messages - for protecting authenticity and message integrity using SSL for secured communication.",
+				"Two Factor Authentication - Out of Band Authentication.",
+				"Connect to third party host using the ISO8583 messaging standard."
+			],
+			"image": "Algebra-Payment-Platform.jpg",
+			"writeUp": [
+				"Algebra Mobile Money Server the Algebra Mobile Money platform offers Mobile Money Operators (MMO) a highly adaptable platform to provide mobile money services to their subscribers. It facilitates an ecosystem of Mobile users, Agencies/Agents and Merchant, while offering the MMO a full control over every component of the system. The Algebra Mobile Money Platform offers subscribers access to easy-to-use mobile money services such as cash-in/cash-out, bill payment and P2P money transfer. Core features include:"
+			],
+			"writeUpList": [
+				"Balance enquiry",
+				"Mini-statement",
+				"P2P transfers",
+				"Bill payment",
+				"Airtime top-up",
+				"Deposit / Cash In",
+				"Withdrawal / Cash Out",
+				"SMS Integration",
+				"Email",
+				"Mobile Application",
+				"Agency and Agent Management",
+				"Merchant Management",
+				"Fee and Commission Management",
+				"Reporting and Auditing",
+				"Third-Party integration e.g Banks, Billers, Merchants and other service providers."
+			],
+			"featured": "true"
+		},{
+			"id": 2,
+			"name": "Secure Voucher/EPIN Distribution",
+			"features": [
+				"Certificate based cryptography.",
+				"Certificate revocation.",
+				"Non repudation.",
+				"Managed pin dispensing/allocation.",
+				"Embedded secure voucher printing (up to 24 vouchers per page)."
+			],
+			"image": "Secure-VoucherEPIN-Distribution.jpg",
+			"writeUp": [
+				"The Voucher process involves generation and delivery of e-PINs via the network of dealers and their agents. Most operators of prepaid services including MNOs have gradually moved towards electronic distribution of PINs and find it convenient and profitable to replace physical scratch cards with e-PINs. The operators often sell the e-PINs in bulk to dealers or distributors, who operate an outsourced e-Voucher distribution service on behalf of the operator by investing in e-Voucher distribution network. But the greatest challenge the Mobile Network Operator faces is ensuring end-to-end security of e-Pins at generation, during transmission and while at rest in the custody of the dealer.",
+				"Hijack of e-Pin file is a common phenomenon in some countries and has inflicted huge losses in revenue and reputation to the Mobile Network Operators. The challenge here is, while the MNO delivers the e-Pin file encrypted, the dealer usually decrypts the entire file to sell to its agents. At that point a hijack could occur. The MNO does not have visibility to the activities of the dealers who most times claim that e-Pins where compromised by the operator before delivery to them. This usually leads to mistrust, loss of revenue and legal battles. We have delivered a solution with our partners to a major multinational MNO player. Our solution features a PKI infrastructure that issues cryptography certificates to dealers and provide support software for secure Pin download from MNO server. Our solution ensures the e-Pin files are encrypted with dealer certificate and downloaded via a secure channel. To ensure that the e-Pin files are always encrypted at rest we provide a desktop application that can extract a given quantity of e-Pins from batch of Pins and leave the rest in encrypted state. That way the e-Pin file will always remain secured. With this desktop application the MNO has complete visibility to the dealer’s activity as each dispense (quantity decryption) activity is logged and sent to the MNO server. The log provides the MNO with the dispensed file name, pin batch number, quantity of pins and time of dispense. Our architecture also ensures that the e-Pin files cannot be decrypted without our desktop application which also will not function without activation by the MNO. The solution has been a great trust booster and revenue assurance to both the dealers and the MNO."
+			],
+			"writeUpList": [
+			],
+			"featured": "true"
+		}, {
+			"id": 3,
+			"name": "School Management System",
+			"features": [
+				"Engage with students and parents with multi-channel communications.",
+				"Make more informed decisions about your recruiting and admissions efforts.",
+				"Track event attendance and academic participation.",
+				"View progress toward enrollment goals through reports, dashboards.",
+				"Web based intuitive user interface.",
+				"Mobile App availalble on Windows, IOS and Android."
+			],
+			"image": "School-Management-System.jpg",
+			"writeUp": [
+				"School Management System is a feature rich interactive web based school management system for students, teachers, parents and school administrators. Using the latest technologies we provide a platform that enhance the efficiency of school administration and improve resource optimization. The portal provides user interfaces that enable interaction amongst all stakeholders thereby fostering camaraderie and building a solid school community. Our school management system covers core functions any independent school will need. These can be enhanced by optional modules and plugins or further customized to specific needs. The core of our solution include the following modules and functionalities:"
+			],
+			"writeUpList": [
+				"Student Management",
+				"Employee Management",
+				"Courses Management",
+				"Assignment and grading Management",
+				"Examination Management",
+				"Attendance Management",
+				"School Fees",
+				"Hostel Management",
+				"Library Management",
+				"Web and Mobile App for Students, Parents, Teachers and Admin",
+				"Reporting and Data analytics"
+			],
+			"featured": "true"
+		}, {
+			"id": 4,
+			"name": "Mobile/Tablet Account Openning App",
+			"features": [
+				"Capture prospective customer personal data.",
+				"Capture prospective customer contact Information.",
+				"Capture prospective customer account information.",
+				"Capture prospective customer product subscription.",
+				"Capture prospective customer identification data.",
+				"Capture prospective customer photo.",
+				"Capture prospective customer signature signed on the phone using the stylus.",
+				"Capture prospective customer Id card photo.",
+				"Capture prospective utility document photo.",
+				"Send all collected customer data to the backend account opening service.",
+				"Integrate with SMS gateway to send SMS message to customer.",
+				"Integrate with Email gateway to send email message to customer."
+			],
+			"image": "Mobile-Tablet-Account-Openning-App.jpg",
+			"writeUp": [
+				"Bank Account Opening App is the right mobile strategy can enable banks to use mobility as a multi-faceted tool for driving business growth and creating competitive advantage. While the increased convenience of advanced self-service mobile applications create customer loyalty, mobile solutions can lower the cost of customer acquisition, enhance brand visibility, reduce sales cycle time and increase employee productivity. Customer acquisition isn’t cheap but banks now have the opportunity to leverage existing mobile networks and technology to access new customer bases. New account acquisitions are an important revenue stream for Banks and Financial Institutions. Traditional customer acquisition requires marketers to approach a prospective customer with account opening forms which are filled with required customer data and taken to the bank office for subsequent entry into the banking application. This approach does not offer the customer instant account and begin to make deposits. We provide a differentiating customer acquisition mobile framework on the major mobile platforms - Android, Windows and IOS.",
+				"We recognize there is no one-fit-all solution so we offer customization based on the business requirement."
+			],
+			"writeUpList": [
+			],
+			"featured": "true"
+		}, {
+			"id": 5,
+			"name": "Bank KYC on Mobile",
+			"features": [
+				"Get picture of customer residence.",
+				"Collect and map gps locations of residence.",
+				"Deliver instant field data to backend database.",
+				"Improved efficiency of field personnel.",
+				"Data analytics of customer demography for better decision making.",
+				"Mobile app for Windows and Android."
+			],
+			"image": "Bank-KYC-on-Mobile.jpg",
+			"writeUp": [
+				"Know Your Customer App (KYC) is a regulatory framework for banks which enables them to know the customers and their financial dealings to be able to serve them better. Banking operations are susceptible to the risks of money laundering and terrorist financing. Therefore, banks are required to follow certain customer identification procedure for opening of accounts and monitoring transactions of a suspicious nature for the purpose of reporting it to the appropriate authority.",
+				"Mobile is everywhere with technologies offering businesses the opportunity to improve data gathering efficiency. Our KYC App makes customer address verification data gathering and reporting seamless and more verifiable. With our app the bank or its agents could capture photo of customer residence using the digital camera and also capture the GPS location. Unlike the traditional approach where data captured using pen and paper is sent to backend officers for entry into the system, our KYC mobile apps instantly commits the data captured in the field to the backend server thereby reducing the chances of errors along the chain of multiple personnel and also increase the throughput of the field personnel.",
+				"Other features of the App includes geo-mapping of the collected GPS record using Google and Bing maps, administrative backend to verify the submitted data through approval/authorization workflow engine before committing to downstream systems or final destination repositories.",
+				"As usual with our software services, we customize applications to suit customer’s business needs."
+			],
+			"writeUpList": [
+			],
+			"featured": "true"
+		}, {
+			"id": 6,
+			"name": "Health and Safety App",
+			"features": [
+				"Time & Cost Savings - automate reporting and workflow processes.",
+				"Notification & Escalation Engine - automate workflow with the configurable workflow and notification engine.",
+				"Third Party Integration - integrate with third party apps through our web api and third party web services.",
+				"Mobile Interface - available on Windows, Android and IOS."
+			],
+			"image": "Health-and-Safety-App.jpg",
+			"writeUp": [
+				"Organizations can become more effective if they have safer and healthy workplaces because they can have fewer day lost, they have higher productivity, they can increase efficiency and quality because they have healthier workforce, and they can reduce medical and insurance costs. All these give the organization a good prestige.",
+				"We believe strongly that the appropriate use of evidence is a critical factor in improving the safety, quality, and value of healthcare and that knowledge transfer is key to ensuring that evidence is understood and used. Timely reporting of identified workplace hazards is an important factor in quickly remedying a potential situation that could impact health and safety of the workforce.",
+				"Our HSE Mobile App enables"
+			],
+			"writeUpList": [
+				"a platform to communicate health and safety guides to the workforce.",
+				"capture photo and GPS location of identified hazards/incidents and post to a backend server for onward notification of appropriate authorities.",
+				"Initiate a workflow for remediation of the identified and reported workplace hazards or incidents."
+			],
+			"featured": "true"
+		}, {
+			"id": 7,
+			"name": "Business Intelligence Solution",
+			"features": [
+			],
+			"image": "Business-Intelligence-Solution.jpg",
+			"writeUp": [
+				"We can help your business make better decisions by providing expert level business intelligence (BI) services. Our BI services will help you optimize your capabilities to leverage various types of data and make it into something the business can use to make better and more informed decisions. Let our experts and developers work with you to customize a solution that transforms the efficiency with which you do business and provide you a competitive advantage.",
+				"It’s estimated that over 1 billion people use Excel to make decisions, and Microsoft has been building advanced BI capabilities for Excel to make it the familiar place (“self-service business intelligence”) to create meaningful BI reports and to analyze data. We help you transform your excel data to deliver business intelligence that empowers executives and employees to quickly understand how they're performing and where they should focus their attention and resources. The result is immediate and measurable ROI in terms of greater accountability and better decision making.",
+				"And if you already have Microsoft SharePoint we will help you publish and make it available to your SharePoint users.",
+				"Our solution offering is not limited to PowerBI. We provide custom solutions that can interpret your data into meaningful business information and expose them on web and mobile app platforms allowing you to access your BI information anytime and anywhere."
+			],
+			"writeUpList": [
+			],
+			"featured": "false"
+		}, {
+			"id": 8,
+			"name": "Sharepoint Application Development",
+			"features": [
+			],
+			"image": "Sharepoint-Application-Development.jpg",
+			"writeUp": [
+				"Managing an organization or a business is no easy job. There is a bunch of things to consider -- people, structure, sales, growth, profits, documents, costs, customers, relationships, advertisements, partners, investors, and so on. The list is endless.",
+				"Microsoft SharePoint provides an array of functionality that makes it an attractive tool in enterprise collaboration, making it easier for employers, employees, partners and other members of a business organization to share documents with each other, to collaborate on projects, and to share information not just within the organization but also to customers. SharePoint also enhances document management, as well as automate business processes. While SharePoint has many great features that could help an organization improve its business processes and collaboration, most of this benefits are not available out-of-the-box. You need SharePoint developers to customize the platform according to your business needs and according to the systems and tools already used by your business.",
+				"We can bring our skills and expertise to help you leverage a variety of Web development options including HTML5, JavaScript, jQuery, CSS3, Mobile and the new development framework offered by the SharePoint 2013 to help accomplish your unique business requirements."
+			],
+			"writeUpList": [
+			],
+			"featured": "false"
+		}, {
+			"id": 9,
+			"name": "Microsoft Office 365",
+			"features": [
+			],
+			"image": "Microsoft-Office-365.jpg",
+			"writeUp": [
+				"Microsoft Office365 is the brand name used by Microsoft for a group of software plus services subscriptions that provides productivity software and related services to its subscribers. For consumers, the service allows the use of Microsoft Office apps on Windows and OS X and provides storage space on Microsoft's cloud storage service OneDrive.",
+				"For business and enterprise users, Office 365 offers plans including e-mail and social networking services through hosted versions of Exchange Server, Lync, SharePoint and Office Web Apps, integration with Yammer, as well as access to the Microsoft Office suite. We can help deliver a package that suites a business need."
+			],
+			"writeUpList": [
+			],
+			"featured": "false"
+		}
+	]
+}
