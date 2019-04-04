@@ -99,7 +99,6 @@ fetchProducts = () =>{
 	products = [];
 	fetchJSONFromFile('./data/products.json', products);
 	console.log('product', products);
-	fetchGetProductsHTML();
 }
 
 //Get individual product(s)
