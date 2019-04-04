@@ -84,6 +84,7 @@ createServiceHTML = (service) =>{
 	return div;
 }
 
+//Create Our Services and log them in
 GetServices = () =>{
 	fetchServices();
 	window.addEventListener('load', function() {
