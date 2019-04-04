@@ -50,11 +50,15 @@ fetchServices = () =>{
 fetchGetServicesHTML = () =>{
 	// console.log('service', services);
 	const article = document.querySelector('article.viaphone-services');
-	services.forEach(service=>{
-		// console.log('A serv', service);
-		// console.log('Returned Div',createServiceHTML(service));
-		article.append(createServiceHTML(service));
-	})
+	if(!article){
+		console.log('no service article');
+	} else{
+		services.forEach(service=>{
+			// console.log('A serv', service);
+			// console.log('Returned Div',createServiceHTML(service));
+			article.append(createServiceHTML(service));
+		})
+	}
 }
 
 createServiceHTML = (service) =>{
@@ -105,13 +109,17 @@ fetchProducts = () =>{
 fetchGetProductsHTML = () =>{
 	// console.log('product', products);
 	const article = document.querySelector('article.viaphone-products');
-	products.forEach(product=>{
+	if(!article){
+		console.log('no service article');
+	} else{
+		products.forEach(product=>{
 		// console.log('A prod', product);
 		// console.log(`Product ${id}`, `This is the id = ${id}, name = ${name}, image = ${image}, features = ${features}, write-up = ${writeUp}, writeUp-list = ${writeUpList}, featured = ${featured}`);
 		// createProductCardHTML(product);
 		// console.log('Returned Div',createProductCardHTML(product));
-		article.append(createProductCardHTML(product));
-	})
+			article.append(createProductCardHTML(product));
+		})
+	}
 }
 
 createProductCardHTML = (product) =>{
@@ -280,8 +288,8 @@ const startApp = () => {
 	toogleMenuBtn(); //Enable Toggle Menu
 	accordionHelper(); //Enable Accordion Show and Hide functionality
 	GetFooterProducts(); //Get Footer product names
-	// GetServices();
-	// GetProducts();
+	GetServices();
+	GetProducts();
 };
 
 startApp();
