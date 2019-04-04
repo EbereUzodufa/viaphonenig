@@ -110,7 +110,7 @@ fetchGetProductsHTML = () =>{
 	// console.log('product', products);
 	const article = document.querySelector('article.viaphone-products');
 	if(!article){
-		console.log('no service article');
+		console.log('no product article');
 	} else{
 		products.forEach(product=>{
 		// console.log('A prod', product);
