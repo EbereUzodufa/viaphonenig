@@ -34,14 +34,14 @@ const fetchJSONFromFile = (file, arrayEle) =>{
 	    console.log('Request failed', error);
 	  });
 
-  	return arrValue;
+  	// return arrValue;
 }
 
 //Get Services by sending json URL
 fetchServices = () =>{
 	services = [];
 	fetchJSONFromFile('./data/services.json', services);
-	console.log('services',services);
+	// console.log('services',services);
 }
 
 //Get individual service(s)
