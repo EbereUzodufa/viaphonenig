@@ -67,7 +67,7 @@ createServiceHTML = (service) =>{
 	const img = document.createElement('img');
 	img.classList.add('service-image');
 	img.src = `images/services/${image}`;
-	img.alt = `Image of our service, ${image}`;
+	img.alt = `Image of our service, ${name}`;
 	div.append(img);
 
 
