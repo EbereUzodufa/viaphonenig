@@ -84,6 +84,13 @@ createServiceHTML = (service) =>{
 	return div;
 }
 
+GetServices = () =>{
+	fetchServices();
+	window.addEventListener('load', function() {
+		fetchGetServicesHTML();
+	});
+}
+
 // Get current year
 const currentYear = () => {
 	let d = new Date();
