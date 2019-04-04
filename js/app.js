@@ -280,8 +280,8 @@ const startApp = () => {
 	toogleMenuBtn(); //Enable Toggle Menu
 	accordionHelper(); //Enable Accordion Show and Hide functionality
 	GetFooterProducts(); //Get Footer product names
-	GetServices();
-	GetProducts();
+	// GetServices();
+	// GetProducts();
 };
 
 startApp();
