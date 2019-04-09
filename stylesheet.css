@@ -9,7 +9,7 @@
 */
 
 
-body, header, main, section, article, footer, .container, a.navLink, button#btnMobileToggle, nav, div.navigation, a#logoLink, div.core-value, div.fields, form, div.contact.field, div.product, div.service, a.social-link, .social-media, .cassavaApp-accordions, .cassavaApp-accordion {
+body, header, main, section, article, footer, .container, a.navLink, button#btnMobileToggle, nav, div.navigation, a#logoLink, div.core-value, div.fields, form, div.contact.field, a.social-link, .social-media, .cassavaApp-accordions, .cassavaApp-accordion {
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -299,6 +299,8 @@ div.product, div.service{
     padding: 10px;
     border-radius: 2px;
     box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+    display: grid;
+	grid-template-rows: 170px 50px auto;
 }
 
 div.contact.field {
