@@ -310,7 +310,7 @@ div.contact.field {
 img.service-image, img.product-image {
     width: 150px;
     height: 150px;
-    margin: 10px auto;
+    margin: auto;
 }
 
 .noScroll{
