@@ -122,6 +122,21 @@ fetchGetProductsHTML = () =>{
 	}
 }
 
+//Get Featured product(s)
+fetchGetFeaturedProductsHTML = () =>{
+	// console.log('product', products);
+	const article = document.querySelector('article.viaphone-featured-products');
+	if(!article){
+		console.log('no featured product article');
+	} else{
+		products.map(product=>{
+			if (product.featured == "true"){
+				article.append(createProductCardHTML(product));
+			}
+		})
+	}
+}
+
 createProductCardHTML = (product) =>{
 	//Create Elements
 
