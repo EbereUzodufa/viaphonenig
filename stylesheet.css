@@ -245,6 +245,14 @@ footer div.footerArea{
 	overflow-y: auto;
 }
 
+[aria-hidden = "true"]{
+	visibility: hidden;
+}
+
+[aria-hidden = "false"]{
+	visibility: visible;
+}
+
 nav{
     width: 250px;
     background: #3EC28F;
