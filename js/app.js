@@ -5,7 +5,7 @@ let accordion = document.getElementsByClassName('cassavaApp-accordion');
 let services = [];
 let products = [];
 const footerUl = document.getElementById('footer-products');
-
+const overlay = document.querySelector('div.overlay');
 
 const fetchJSONFromFile = (file, arrayEle) =>{
 	let arrValue = [];
@@ -247,7 +247,6 @@ const currentYear = () => {
 const setOverlay = (value) =>{
 	let setValue = value;
 	// console.log(setValue);
-	const overlay = document.querySelector('div.overlay');
 	if (setValue == true){
 		overlay.style.width = '100%';
 		overlay.scrollTop = 0;
