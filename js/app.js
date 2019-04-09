@@ -187,6 +187,7 @@ GetProducts = () =>{
 	fetchProducts();
 	window.addEventListener('load', function() {
 		fetchGetProductsHTML();
+		fetchGetFeaturedProductsHTML();
 	});
 }
 
