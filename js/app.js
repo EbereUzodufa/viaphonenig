@@ -236,6 +236,11 @@ GetFooterProducts = () =>{
 	});
 }
 
+//Set aria-hidden property
+SetAriaHidden = (val) =>{
+	overlay.setAttribute('aria-hidden', val);
+}
+
 // Get current year
 const currentYear = () => {
 	let d = new Date();
@@ -251,9 +256,11 @@ const setOverlay = (value) =>{
 		overlay.style.width = '100%';
 		overlay.scrollTop = 0;
 		body.classList.add('noScroll');
+		SetAriaHidden('false');
 	} else{
 		overlay.style.width = '0%';
 		body.classList.remove('noScroll');
+		SetAriaHidden('true');
 	}
 };
 
