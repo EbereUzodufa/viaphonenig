@@ -304,11 +304,22 @@ const accordionHelper = () =>{
 	}
 }
 
+//Set aria-hidden if screen >= 1024px
+const SetAriaBAsedOnScreen = () =>{
+	const screenWidth = screen.width;
+	if (screenWidth >= 1024) {
+		SetAriaHidden('false');
+	} else {
+		SetAriaHidden('true');
+	}
+}
+
 // On application start, perform these
 const startApp = () => {
 	currentYear(); //Get Current Year
 	toogleMenuBtn(); //Enable Toggle Menu
 	accordionHelper(); //Enable Accordion Show and Hide functionality
+	SetAriaBAsedOnScreen();
 	GetFooterProducts(); //Get Footer product names
 	GetServices();
 	GetProducts();
