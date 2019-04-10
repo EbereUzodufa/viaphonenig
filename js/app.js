@@ -172,7 +172,7 @@ createProductCardHTML = (product) =>{
 	const a = document.createElement('a');
 	a.classList.add('product-link');
 	a.innerHTML = `Click here to know more about ${name}`;
-	a.href = "";
+	a.href = productURL(id);
 	a.role = 'button';
 	div.append(a);
 
@@ -212,7 +212,7 @@ createFooterProductHTML = (product) =>{
 
 	const a = document.createElement('a');
 	a.classList.add('footer-product-link');
-	a.href = "";
+	a.href = productURL(product.id);
 	a.innerHTML = product.name;
 
 	li.append(a);
@@ -318,12 +318,6 @@ const SetAriaBAsedOnScreen = () =>{
 		SetAriaHidden('true');
 	}
 }
-
-//Populate Aside with products
-const populate
-
-//Display clicked product
-
 
 // On application start, perform these
 const startApp = () => {
