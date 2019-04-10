@@ -105,6 +105,11 @@ fetchProducts = () =>{
 	console.log('product', products);
 }
 
+//Create product URL
+const productURL = (id) =>{
+	return (`./product.html?id=${id}`);
+}
+
 //Get individual product(s)
 fetchGetProductsHTML = () =>{
 	// console.log('product', products);
@@ -313,6 +318,12 @@ const SetAriaBAsedOnScreen = () =>{
 		SetAriaHidden('true');
 	}
 }
+
+//Populate Aside with products
+const populate
+
+//Display clicked product
+
 
 // On application start, perform these
 const startApp = () => {
