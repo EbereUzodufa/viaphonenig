@@ -509,4 +509,8 @@ button.cassavaApp-accordion:hover{
 	    border-left: 8px solid #16642F;
 	    list-style-type: none;
 	}
+
+	ul#viaphone-product-overview-lists {
+	    list-style: square;
+	}
 }
