@@ -317,6 +317,10 @@ const SetAriaBAsedOnScreen = () =>{
 const populateAsideProducts = () =>{
 	const aside = document.querySelector('aside.viaphone-products');
 	if (aside){
+		const div = document.createElement('div');
+		div.classList.add('product-link-wrapper');
+		aside.append(div);
+		
 		products.map(product=>{
 			const a = document.createElement('a');
 			a.href = productURL(product.id);
@@ -324,7 +328,7 @@ const populateAsideProducts = () =>{
 			a.classList.add('viaphone-product-link');
 			a.role = 'button';
 
-			aside.append(a);
+			div.append(a);
 		});
 	}
 }
