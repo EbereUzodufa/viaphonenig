@@ -522,4 +522,13 @@ button.cassavaApp-accordion:hover{
 	    display: flex;
 	    flex-wrap: wrap;
 	}
+
+	div.product-link-wrapper {
+	    width: 100%;
+	    display: flex;
+	    flex-wrap: wrap;
+	    height: 75vh;
+	    margin-top: 20px;
+	    margin-bottom: auto;
+	}
 }
