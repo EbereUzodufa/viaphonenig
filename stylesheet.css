@@ -477,4 +477,25 @@ button.cassavaApp-accordion:hover{
 	    margin-left: -1em;
 	    display: inline-block;
 	}
+
+	a.viaphone-product-link {
+	    width: 100%;
+	    /* height: auto; */
+	    margin: auto;
+	    font-size: 1.1rem;
+	    font-family: 'Lato';
+	    text-decoration: none;
+	    color: #fff;
+	    /* border-top: 2px solid; */
+	    /* height: 21px; */
+	    line-height: normal;
+	    text-align: center;
+	}
+
+	a.viaphone-product-link:hover {
+	    color: #000;
+	    background: rgba(255,255,255,0.5);
+	    padding: 10px;
+	    transition: 0.7s;
+	}
 }
