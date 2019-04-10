@@ -513,4 +513,13 @@ button.cassavaApp-accordion:hover{
 	ul#viaphone-product-overview-lists {
 	    list-style: square;
 	}
+
+	aside.viaphone-products {
+	    width: 250px;
+	    padding: 10px;
+	    background: #3EC28F;
+	    /* z-index: -1; */
+	    display: flex;
+	    flex-wrap: wrap;
+	}
 }
