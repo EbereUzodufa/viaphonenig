@@ -329,7 +329,115 @@ const populateAsideProducts = () =>{
 	}
 }
 
-const displayProduct
+//Show clicked product
+const displayProduct = () => {
+	const id = getProductId();
+	if(id) {
+		products.map(prod =>{
+			if (prod.id == id) {
+				document.title = prod.name +' | Viaphone Services Limited - Idea for Everyone';
+				selectedProductHTML(prod);
+				// return console.log(prod);
+			}
+		});
+	}
+	// console.log(id);
+}
+
+//Get this product from this ID
+getProductId = (url) => {
+	let id = 'id';
+	if (!url)
+	  url = window.location.href;
+	id = id.replace(/[\[\]]/g, '\\$&');
+	const regex = new RegExp(`[?&]${id}(=([^&#]*)|&|#|$)`),
+	  results = regex.exec(url);
+	if (!results)
+	  return null;
+	if (!results[2])
+	  return '';
+	return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+
+//HTML of selected product
+const selectedProductHTML = (product) => {
+	//Select the Section we need
+	const productSection = document.querySelector('section.product-info');
+
+	//create the product name
+	if (product.name) {
+		const productName = document.createElement('h1');
+		productName.innerHTML = product.name;
+		productName.id = 'product-name';
+		productSection.append(productName);
+	}
+
+	//Create article in section for features
+	if (product.features) {
+		//Create article with class features
+		const featArticle = document.createElement('article');
+		featArticle.classList.add('features');
+		productSection.append(featArticle);
+
+		//Create h2 and append to the article
+		const featH2 = document.createElement('h2');
+		featH2.innerHTML = 'features';
+		featArticle.append(featH2);
+
+		//Create ul for features
+		const featUl = document.createElement('ul');
+		featUl.id = 'viaphone-product-features';
+		featArticle.append(featUl);
+
+		//Create List of features
+		for(const feature of product.features){
+			//Create an li for this feature
+			const featLi = document.createElement('li');
+			featLi.classList.add('viaphone-product-feature');
+			featLi.innerHTML = feature;
+
+			//append li to ul
+			featUl.append(featLi);
+		}
+	}
+
+	//Create article in section for overview
+	if (product.writeUp) {
+		//Create article with class overiew
+		const overviewArticle = document.createElement('article');
+		overviewArticle.classList.add('overview');
+		productSection.append(overviewArticle);
+
+		//Create h2 and append to the article
+		const overviewH2 = document.createElement('h2');
+		overviewH2.innerHTML = 'overview';
+		overviewArticle.append(overviewH2);
+
+		//create paragraph and append to article
+		const overviewPara = document.createElement('p');
+		overviewPara.innerHTML = product.writeUp;
+		overviewArticle.append(overviewPara);
+
+		//Create oveview List(s) if any 
+		if (product.writeUpList) {
+			//Create ul for Write up List
+			const overviewUl = document.createElement('ul');
+			overviewUl.id = 'viaphone-product-overview-lists';
+			overviewArticle.append(overviewUl);
+	
+			//Create List of featyres
+			for(const item of product.writeUpList){
+				//Create an li for this Write up List
+				const overviewLi = document.createElement('li');
+				overviewLi.classList.add('viaphone-product-overview-list');
+				overviewLi.innerHTML = item;
+	
+				//append li to ul
+				overviewUl.append(overviewLi);
+			}
+		}
+	}
+}
 
 // On application start, perform these
 const startApp = () => {
@@ -340,6 +448,9 @@ const startApp = () => {
 	GetFooterProducts(); //Get Footer product names
 	GetServices();
 	GetProducts();
+	window.addEventListener('load', function() {
+		populateAsideProducts();
+	});
 };
 
 startApp();
