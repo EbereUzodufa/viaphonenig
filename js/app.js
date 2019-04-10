@@ -377,7 +377,7 @@ const selectedProductHTML = (product) => {
 	}
 
 	//Create article in section for features
-	if (product.features) {
+	if (product.features && product.features.length != 0) {
 		//Create article with class features
 		const featArticle = document.createElement('article');
 		featArticle.classList.add('features');
@@ -423,7 +423,7 @@ const selectedProductHTML = (product) => {
 		overviewArticle.append(overviewPara);
 
 		//Create oveview List(s) if any 
-		if (product.writeUpList) {
+		if (product.writeUpList && product.writeUpList.length != 0) {
 			//Create ul for Write up List
 			const overviewUl = document.createElement('ul');
 			overviewUl.id = 'viaphone-product-overview-lists';
