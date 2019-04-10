@@ -50,9 +50,7 @@ fetchServices = () =>{
 fetchGetServicesHTML = () =>{
 	// console.log('service', services);
 	const article = document.querySelector('article.viaphone-services');
-	if(!article){
-		console.log('no service article');
-	} else{
+	if(article){
 		services.forEach(service=>{
 			// console.log('A serv', service);
 			// console.log('Returned Div',createServiceHTML(service));
@@ -114,9 +112,7 @@ const productURL = (id) =>{
 fetchGetProductsHTML = () =>{
 	// console.log('product', products);
 	const article = document.querySelector('article.viaphone-products');
-	if(!article){
-		console.log('no product article');
-	} else{
+	if(article){
 		products.forEach(product=>{
 		// console.log('A prod', product);
 		// console.log(`Product ${id}`, `This is the id = ${id}, name = ${name}, image = ${image}, features = ${features}, write-up = ${writeUp}, writeUp-list = ${writeUpList}, featured = ${featured}`);
@@ -131,9 +127,7 @@ fetchGetProductsHTML = () =>{
 fetchGetFeaturedProductsHTML = () =>{
 	// console.log('product', products);
 	const article = document.querySelector('article.viaphone-featured-products');
-	if(!article){
-		console.log('no featured product article');
-	} else{
+	if(article){
 		products.map(product=>{
 			if (product.featured == "true"){
 				article.append(createProductCardHTML(product));
@@ -322,9 +316,7 @@ const SetAriaBAsedOnScreen = () =>{
 //Populate Aside with products
 const populateAsideProducts = () =>{
 	const aside = document.querySelector('aside.viaphone-products');
-	if (!aside) {
-		console.log('No aside');
-	} else {
+	if (aside){
 		products.map(product=>{
 			const a = document.createElement('a');
 			a.href = productURL(product.id);
@@ -336,6 +328,8 @@ const populateAsideProducts = () =>{
 		});
 	}
 }
+
+const displayProduct
 
 // On application start, perform these
 const startApp = () => {
