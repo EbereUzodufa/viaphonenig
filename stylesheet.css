@@ -283,7 +283,7 @@ p.service-title,p.product-title {
 
 a.product-link{
 	color: #16642F;
-	display: none;
+	/*display: none;*/
 }
 
 p.navItem {
