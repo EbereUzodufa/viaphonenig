@@ -470,4 +470,11 @@ button.cassavaApp-accordion:hover{
 	    color: #232323;
 	    font-family: 'Lato', sans-serif;
 	}
+
+	li.viaphone-product-feature::before {
+	    content: '◈';
+	    color: #FD6900;
+	    margin-left: -1em;
+	    display: inline-block;
+	}
 }
