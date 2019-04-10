@@ -498,4 +498,15 @@ button.cassavaApp-accordion:hover{
 	    padding: 10px;
 	    transition: 0.7s;
 	}
+
+	ul#viaphone-product-features {
+	    background: rgba(255,255,255,0.5);
+	    padding-right: 5px;
+	    padding-top: 5px;
+	    width: 100%;
+	    padding-bottom: 5px;
+	    padding: 10px 20px;
+	    border-left: 8px solid #16642F;
+	    list-style-type: none;
+	}
 }
