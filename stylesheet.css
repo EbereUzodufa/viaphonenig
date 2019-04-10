@@ -541,4 +541,9 @@ section.product-info {
 	    margin-top: 20px;
 	    margin-bottom: auto;
 	}
+
+	#mainPageProduct {
+	    display: grid;
+	    grid-template-columns: 300px auto;
+	}
 }
