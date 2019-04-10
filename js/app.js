@@ -319,6 +319,24 @@ const SetAriaBAsedOnScreen = () =>{
 	}
 }
 
+//Populate Aside with products
+const populateAsideProducts = () =>{
+	const aside = document.querySelector('aside.viaphone-products');
+	if (!aside) {
+		console.log('No aside');
+	} else {
+		products.map(product=>{
+			const a = document.createElement('a');
+			a.href = productURL(product.id);
+			a.innerHTML = product.name;
+			a.classList.add('viaphone-product-link');
+			a.role = 'button';
+
+			aside.append(a);
+		});
+	}
+}
+
 // On application start, perform these
 const startApp = () => {
 	currentYear(); //Get Current Year
