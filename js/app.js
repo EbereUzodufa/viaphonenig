@@ -285,19 +285,21 @@ const toogleMenuBtn = () =>{
 
 //Toggle display of product List
 const toogleProductListBtn = () =>{
-	btnProdToggle.addEventListener('click', function() {
-		const div = document.querySelector('div.product-link-wrapper');
-		console.log('div', div);
-		if (div) {
-			if (div.style.display == 'none' || div.style.display == '') {
-				btnProdToggle.style.backgroundColor = "#FD6900";
-				div.style.display = 'flex';
-			} else{
-				btnProdToggle.style.backgroundColor = "#16642F";
-				div.style.display = 'none';
+	if (btnProdToggle){
+		btnProdToggle.addEventListener('click', function() {
+			const div = document.querySelector('div.product-link-wrapper');
+			console.log('div', div);
+			if (div) {
+				if (div.style.display == 'none' || div.style.display == '') {
+					btnProdToggle.style.backgroundColor = "#FD6900";
+					div.style.display = 'flex';
+				} else{
+					btnProdToggle.style.backgroundColor = "#16642F";
+					div.style.display = 'none';
+				}
 			}
-		}
-	});
+		});
+	}
 }
 
 const accordionHelper = () =>{
