@@ -246,7 +246,7 @@ footer div.footerArea{
 }
 
 [aria-hidden = "true"]{
-	visibility: hidden;
+	display: none;
 }
 
 [aria-hidden = "false"]{
