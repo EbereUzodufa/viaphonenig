@@ -6,6 +6,7 @@ let services = [];
 let products = [];
 const footerUl = document.getElementById('footer-products');
 const overlay = document.querySelector('div.overlay');
+const btnProdToggle = document.getElementById('selectProduct');
 
 const fetchJSONFromFile = (file, arrayEle) =>{
 	let arrValue = [];
