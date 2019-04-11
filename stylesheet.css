@@ -531,6 +531,10 @@ div.product-link-wrapper {
 		margin: auto;
 	}
 
+	aside.viaphone-products {
+	    width: 250px;
+	}
+
 	article#contact-form, article#contact-details, .container.col-2{
 	    width: 45%;
 	    margin: 5px auto;
