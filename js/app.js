@@ -465,6 +465,7 @@ const selectedProductHTML = (product) => {
 const startApp = () => {
 	currentYear(); //Get Current Year
 	toogleMenuBtn(); //Enable Toggle Menu
+	toogleProductListBtn(); //Toggle Product List display
 	accordionHelper(); //Enable Accordion Show and Hide functionality
 	SetAriaBAsedOnScreen();
 	GetFooterProducts(); //Get Footer product names
