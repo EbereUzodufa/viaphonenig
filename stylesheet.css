@@ -444,7 +444,7 @@ ul#viaphone-product-overview-lists {
 }
 
 aside.viaphone-products {
-    width: 250px;
+    width: 100%;
     padding: 10px;
     background: #3EC28F;
     display: flex;
