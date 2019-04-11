@@ -454,7 +454,7 @@ aside.viaphone-products {
 
 div.product-link-wrapper {
     width: 100%;
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     height: 75vh;
     background-color: #3EC28F;
