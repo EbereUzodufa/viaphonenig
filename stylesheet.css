@@ -551,6 +551,10 @@ div.product-link-wrapper {
 		width: 30%;
 	}
 
+	div.product-link-wrapper {
+		display: flex;
+	}
+
 	#mainPageProduct {
 	    display: grid;
 	    grid-template-columns: 300px auto;
