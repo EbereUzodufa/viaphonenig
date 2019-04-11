@@ -457,6 +457,7 @@ div.product-link-wrapper {
     display: flex;
     flex-wrap: wrap;
     height: 75vh;
+    background-color: #3EC28F;
     margin-top: 20px;
     margin-bottom: auto;
 }
