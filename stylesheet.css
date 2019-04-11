@@ -495,14 +495,11 @@ section.product-info {
 
 	a.viaphone-product-link {
 	    width: 100%;
-	    /* height: auto; */
 	    margin: auto;
 	    font-size: 1.1rem;
 	    font-family: 'Lato';
 	    text-decoration: none;
 	    color: #fff;
-	    /* border-top: 2px solid; */
-	    /* height: 21px; */
 	    line-height: normal;
 	    text-align: center;
 	}
@@ -533,7 +530,6 @@ section.product-info {
 	    width: 250px;
 	    padding: 10px;
 	    background: #3EC28F;
-	    /* z-index: -1; */
 	    display: flex;
 	    flex-wrap: wrap;
 	}
