@@ -555,4 +555,8 @@ div.product-link-wrapper {
 	    display: grid;
 	    grid-template-columns: 300px auto;
 	}
+
+	button#selectProduct{
+		display: none;
+	}
 }
