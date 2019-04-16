@@ -9,7 +9,7 @@ const offlineItemCached = [
   'cassavaapp.html',
   'contacts.html',
   'products.html',
-  'product.html',
+  // 'product.html',
   'services.html',
   'stylesheet.css',
   'manifest.json',
