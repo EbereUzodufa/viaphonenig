@@ -3,7 +3,7 @@
     "lang" : "en",
     "name" : "Viaphone Services Limited",
     "scope" : "/",
-    "display" : "browser",
+    "display" : "standalone",
     "start_url" : "https://viaphonenig.com/",
     "short_name" : "Viaphonenig",
     "theme_color" : "#3EC28F",
