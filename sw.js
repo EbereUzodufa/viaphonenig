@@ -3,22 +3,20 @@
 const CACHE = "pwabuilder-page";
 
 // TODO: replace the following with the correct offline fallback page i.e.: const offlineFallbackPage = "offline.html";
-const offlineFallbackPage = "ToDo-replace-this-name.html";
+const offlineItemCached = [
+
+];
 
 // Install stage sets up the offline page in the cache and opens a new cache
 self.addEventListener("install", function (event) {
   console.log("[PWA Builder] Install Event processing");
 
   event.waitUntil(
-    caches.open(CACHE).then(function (cache) {
-      console.log("[PWA Builder] Cached offline page during install");
-
-      if (offlineFallbackPage === "ToDo-replace-this-name.html") {
-        return cache.add(new Response("TODO: Update the value of the offlineFallbackPage constant in the serviceworker."));
-      }
-
-      return cache.add(offlineFallbackPage);
-    })
+    caches.open(CACHE)
+      .then(function (cache) {
+        console.log("[PWA Builder] Cached offline page during install");
+        return cache.add(offlineItemCached);
+      })
   );
 });
 
@@ -38,7 +36,7 @@ self.addEventListener("fetch", function (event) {
 
       console.error("[PWA Builder] Network request Failed. Serving offline page " + error);
       return caches.open(CACHE).then(function (cache) {
-        return cache.match(offlineFallbackPage);
+        return cache.match(offlineItemCached);
       });
     })
   );
@@ -46,9 +44,9 @@ self.addEventListener("fetch", function (event) {
 
 // This is an event that can be fired from your page to tell the SW to update the offline page
 self.addEventListener("refreshOffline", function () {
-  const offlinePageRequest = new Request(offlineFallbackPage);
+  const offlinePageRequest = new Request(offlineItemCached);
 
-  return fetch(offlineFallbackPage).then(function (response) {
+  return fetch(offlineItemCached).then(function (response) {
     return caches.open(CACHE).then(function (cache) {
       console.log("[PWA Builder] Offline page updated from refreshOffline event: " + response.url);
       return cache.put(offlinePageRequest, response);
